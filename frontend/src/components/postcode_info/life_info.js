@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Summary from './summary'
 import DisplayAmount from '../info/display_amount'
+import SourceBadge from '../info/source_badge'
 
 import Share from '../share'
 
@@ -44,7 +45,7 @@ const LifeInfo = ({
 
   return (
     <React.Fragment>
-      <h4>{coordinator}</h4>
+      <h4>{coordinator} <SourceBadge source="life" /></h4>
       <DisplayAmount amount={euContribution} />
       <p className="text-muted">From {year}</p>
       {lead}

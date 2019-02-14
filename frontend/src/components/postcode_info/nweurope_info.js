@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import DisplayAmount from '../info/display_amount'
+import SourceBadge from '../info/source_badge'
 
 import Share from '../share'
 
@@ -20,20 +21,20 @@ const NweuropeInfo = ({
 
   const tweet =
     `Since 2014, the EU provided ${beneficiary} ${displayEuGrant}` +
-    ` as part of the ${project} project in the NWEurope programme.`
+    ` as part of the ${project} project in the Interreg North-West Europe programme.`
 
   let lead
 
   lead = (
     <p className="lead">
       Since 2014, the EU provided {beneficiary} {displayEuGrant} as part of the{' '}
-      {project} project in the NWEurope programme.
+      {project} project in the Interreg North-West Europe programme.
     </p>
   )
 
   return (
     <React.Fragment>
-      <h4>{beneficiary}</h4>
+      <h4>{beneficiary} <SourceBadge source="nweurope" /></h4>
       <DisplayAmount amount={funding} />
       <p className="text-muted">2015-2020</p>
       {lead}
