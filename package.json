@@ -1,0 +1,38 @@
+{
+  "name": "my_eu",
+  "version": "1.0.0",
+  "description": "Find out what the EU has done for your area.",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint data/utilities frontend/src",
+    "prettier": "prettier --write data/utilities/*.js frontend/src/*.{js,scss} frontend/src/**/*.{js,scss}",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechForUK/my_eu.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/TechForUK/my_eu/issues"
+  },
+  "homepage": "https://www.myeu.uk",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.15.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

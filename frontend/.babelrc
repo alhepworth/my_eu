@@ -1,0 +1,15 @@
+{
+  "plugins": ["@babel/plugin-syntax-dynamic-import"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "targets": {
+          "browsers": [">0.25%", "not dead"]
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}

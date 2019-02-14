@@ -1,0 +1,22 @@
+{
+  "name": "my-eu-signs-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/datastore": "^2.0.0",
+    "@google-cloud/storage": "^2.3.1",
+    "escape-html": "^1.0.3",
+    "express-basic-auth": "^1.1.6",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}

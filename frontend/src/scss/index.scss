@@ -1,0 +1,192 @@
+@import 'custom';
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #37474f;
+}
+
+.navbar-brand img {
+  margin-left: 22px;
+}
+
+.my-eu-info {
+  h2 {
+    text-align: center;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .my-eu-hospital-icons {
+    margin-bottom: 0.5rem;
+  }
+
+  .my-eu-hospital-in-the {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.btn-contact {
+  border-radius: 18px;
+  background-color: white;
+  color: #0f73ae;
+  border: 2px solid #0f73ae;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+.btn-contact:hover {
+  border-radius: 18px;
+  background-color: #0f73ae;
+  color: white;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  border: 2px solid #0f73ae;
+}
+.btn-social {
+  border-radius: 50%;
+  background-color: white;
+  color: #0f73ae;
+  border: 2px solid #0f73ae;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+.btn-social:hover {
+  border-radius: 50%;
+  background-color: #0f73ae;
+  color: white;
+  margin-bottom: 5px;
+  margin-right: 3px;
+  border: 2px solid #0f73ae;
+}
+
+.my-eu-about {
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+.my-eu-tell-your-mp-nav {
+  nav {
+    .navbar-nav {
+      display: none;
+    }
+  }
+}
+
+.my-eu-tell-your-mp {
+  text-align: center;
+}
+
+.my-eu-icon-number {
+  text-align: center;
+  white-space: nowrap;
+  padding-top: $spacer;
+}
+
+.my-eu-sidebar-ad {
+  text-align: center;
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+}
+
+.my-eu-button-ad {
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+.my-eu-sidebar-cta {
+  margin-top: $spacer;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.my-eu-signs-upload {
+  input[type='file'] {
+    display: none;
+  }
+
+  cursor: pointer;
+  color: $link-color;
+  i {
+    font-size: 5rem;
+  }
+}
+
+.my-eu-signs-upload:hover {
+  color: $link-hover-color;
+}
+
+button.my-eu-details-toggle.collapsed:before {
+  content: 'Show ';
+}
+
+button.my-eu-details-toggle:before {
+  content: 'Hide ';
+}
+
+aside.bestforbritain-popup {
+  background-color: theme-color('light');
+  box-shadow: 0 0 4pt 0 rgba(0, 0, 0, 0.33);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  transform: translateY(100%);
+  animation: slide-up 0.5s forwards;
+}
+
+@keyframes slide-up {
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  #my-eu-root {
+    min-height: 100%;
+    height: 100%;
+
+    #my-eu-app {
+      min-height: 100%;
+      height: 100%;
+
+      #my-eu-bar {
+        overflow-y: auto;
+      }
+
+      #my-eu-bar,
+      #my-eu-map {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #my-eu-map {
+    height: 70vh;
+    min-height: 300px;
+  }
+}
